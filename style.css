@@ -1,0 +1,414 @@
+/* ---------- General ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b0f1a;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 80px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-sub {
+  text-align: center;
+  color: #9aa4b5;
+  margin-bottom: 40px;
+}
+
+.label {
+  color: #3da9fc;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border: 2px solid #3da9fc;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #3da9fc;
+  color: #0b0f1a;
+}
+
+.btn-outline {
+  background-color: #0b0f1a;
+  color: #3da9fc;
+}
+
+.small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.center-btn {
+  display: block;
+  width: 220px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+/* Hover effects (bonus) */
+.btn-primary:hover {
+  background-color: #1d8fe6;
+  border-color: #1d8fe6;
+}
+
+.btn-outline:hover {
+  background-color: #3da9fc;
+  color: #0b0f1a;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background-color: #0b0f1a;
+  border-bottom: 1px solid #1e2638;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a:hover {
+  color: #3da9fc;
+}
+
+/* ---------- 1) Hero ---------- */
+.hero {
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.hero-text {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.hero-img {
+  width: 50%;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #ff4d4f;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.tags {
+  color: #9aa4b5;
+  margin: 15px 0;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  margin-bottom: 15px;
+}
+
+.desc {
+  color: #c4ccda;
+  margin-bottom: 25px;
+}
+
+.new-price {
+  font-size: 40px;
+  font-weight: bold;
+  color: #3da9fc;
+}
+
+.old-price {
+  color: #7c869a;
+  margin: 0 10px;
+  text-decoration: line-through;
+}
+
+.save {
+  background-color: #123d2b;
+  color: #3ddc97;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.installment {
+  color: #9aa4b5;
+  font-size: 14px;
+  margin: 8px 0 25px;
+}
+
+.hero-text .btn {
+  margin-right: 10px;
+}
+
+/* ---------- 2) Features ---------- */
+.features {
+  background-color: #0f1524;
+}
+
+.feature-card {
+  width: 31%;
+  margin: 0 1%;
+  padding: 28px;
+  background-color: #151c2f;
+  border: 1px solid #1e2638;
+  border-radius: 16px;
+}
+
+.feature-card h3 {
+  margin: 10px 0;
+}
+
+.feature-card p {
+  color: #9aa4b5;
+}
+
+.stat {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #1e2638;
+}
+
+.stat b {
+  display: block;
+  font-size: 28px;
+  color: #3da9fc;
+}
+
+.cta-banner {
+  margin-top: 40px;
+  padding: 50px 30px;
+  text-align: center;
+  background-color: #151c2f;
+  border: 1px solid #3da9fc;
+  border-radius: 20px;
+}
+
+.cta-banner h3 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.cta-banner p {
+  color: #9aa4b5;
+  margin-bottom: 25px;
+}
+
+/* ---------- 3) Reviews ---------- */
+.rating-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+  background-color: #151c2f;
+  border-radius: 16px;
+}
+
+.rating-main {
+  text-align: center;
+}
+
+.rating-main h1 {
+  font-size: 64px;
+  color: #3da9fc;
+}
+
+.rating-bars p {
+  margin: 6px 0;
+}
+
+.rating-extra b {
+  font-size: 26px;
+  color: #3da9fc;
+  margin-right: 8px;
+}
+
+.review-card {
+  width: 48%;
+  margin: 0 1%;
+  padding: 28px;
+  background-color: #151c2f;
+  border: 1px solid #1e2638;
+  border-radius: 16px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.reviewer img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.reviewer p {
+  color: #9aa4b5;
+  font-size: 14px;
+}
+
+.meta {
+  color: #f5b301;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* ---------- 4) Related products ---------- */
+.related {
+  background-color: #0f1524;
+}
+
+.product-card {
+  width: 23%;
+  margin: 0 1%;
+  background-color: #151c2f;
+  border: 1px solid #1e2638;
+  border-radius: 16px;
+}
+
+.product-card img {
+  height: 200px;
+  border-radius: 16px 16px 0 0;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  margin: 6px 0;
+}
+
+.product-info p {
+  color: #9aa4b5;
+  font-size: 14px;
+  height: 65px;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.product-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3da9fc;
+}
+
+/* Hover on cards (bonus) */
+.feature-card:hover,
+.review-card:hover,
+.product-card:hover {
+  border-color: #3da9fc;
+  background-color: #1b2540;
+}
+
+/* ---------- 6) Footer ---------- */
+.footer {
+  background-color: #070a12;
+  padding: 60px 8% 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-about {
+  width: 35%;
+}
+
+.footer-about h2 {
+  color: #3da9fc;
+  margin-bottom: 10px;
+}
+
+.footer-about p,
+.footer-col a {
+  color: #9aa4b5;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-col a:hover,
+.footer-bottom a:hover {
+  color: #3da9fc;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #1e2638;
+  text-align: center;
+  color: #7c869a;
+  font-size: 14px;
+}
+.icon {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 15px;
+}
+
+.logo-img {
+  width: 30px;
+  height: 30px;
+}
